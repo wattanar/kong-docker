@@ -32,6 +32,7 @@ services:
       - kong-database
     image: kong:latest
     container_name: kong
+    user: root
     restart: always
     environment:
       - KONG_DATABASE=postgres
