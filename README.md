@@ -30,3 +30,9 @@ docker-compose up -d kong
 **Now Kong is Running**
 - Kong Admin API http://127.0.0.1:8001
 - Kong Proxy http://127.0.0.1
+
+## SSL Tunel
+
+```shell
+ssl -L 8001:127.0.0.1:8001 root@your-server-ip
+```
